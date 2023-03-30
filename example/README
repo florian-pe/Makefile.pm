@@ -1,0 +1,17 @@
+
+# example of commands
+
+./make.pl -v
+./make.pl test
+
+
+./make.pl
+./make.pl file.o
+./make.pl -v test lines.txt
+./make.pl -v test lines2.txt
+
+
+
+
+
+
