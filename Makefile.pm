@@ -155,7 +155,7 @@ sub rule {
 sub make {
     my $rule = shift;
     my $makefile = $rule->{makefile};
-    my $most_recent = 0;    # most recent dependency modification, recursively
+    my $most_recent = 0;    # most recent dependency modification date, recursively
 
     if ($rule->satisfied) {
         return $rule->most_recent;
