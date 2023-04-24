@@ -61,9 +61,7 @@ sub detect_cycle {
     my ($RULES, $stack) = @_;
     for my $rule (sort values $RULES->%*) {
         if (dfs_check_cycle($rule, $stack)) {
-            say STDERR "cycle detected";
-            say STDERR join " -> ", $stack->@*;
-            exit 1;
+            return 1;
         }
     }
 }
