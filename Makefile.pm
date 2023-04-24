@@ -64,6 +64,7 @@ sub detect_cycle {
             return 1;
         }
     }
+    return 0;
 }
 
 sub make {
